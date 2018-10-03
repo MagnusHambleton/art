@@ -1,0 +1,12 @@
+---
+layout: processing_render
+title: "Coral"
+date: 2018-10-03
+description: 
+image: /assets/images/placeholder-12.jpg
+author: Magnus Hambleton
+script: /assets/processing/coral/coral.pde#full
+tags: 
+  - processing
+---
+Growing coral
