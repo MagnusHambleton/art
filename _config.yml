@@ -10,8 +10,8 @@ name: Magnus Hambleton
 title: Analogmantra Art
 description: >
   These are my experiments in generative art
-url: http://analogmantra.com
-default_img: /assets/images/seo.jpg
+url: http://art.analogmantra.com
+default_img: /assets/images/large_am.png
 social:
   - name: linkedin
     url: https://www.linkedin.com/in/magnushambleton/
