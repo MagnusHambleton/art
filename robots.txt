@@ -1,1 +1,1 @@
-Sitemap: http://analogmantra.com/sitemap.xml
+Sitemap: http://art.analogmantra.com/sitemap.xml
