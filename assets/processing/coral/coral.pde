@@ -3,7 +3,7 @@ ArrayList<Agent> agents;
 int num_agents = 20;
 
 void setup() {
-  size(1660, 960);
+  size(2767, 1500);
   generate();
   smooth();
   //pixelDensity(2);
@@ -65,7 +65,7 @@ class Agent {
 
   void update() {
     float dist = sqrt(pow((x-width/2),2)+pow((y-height/2),2));
-    float drift = 0.012-0.015*dist/(height/2);
+    float drift = 0.005-0.006*dist/( height/2);
     if (dist>height/2) { drift = 0;}
     dir+=random(-0.04,0.04+drift);
     x += cos(dir)*vel;
