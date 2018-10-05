@@ -5,8 +5,8 @@ date: 2018-10-03
 description: 
 image: /assets/images/coral.png
 author: Magnus Hambleton
-script: /assets/processing/coral/coral.pde#full
+script: /assets/processing/coral/coral.pde
 tags: 
   - processing
 ---
-Growing coral
+Randomly generated strings spiraling outwards
