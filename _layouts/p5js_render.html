@@ -8,18 +8,13 @@ layout: default
         <h2 itemprop="name headline">{{ page.title }}</h2>
       </div>
     </div>
-    <script src="/assets/js/processing.min.js"></script>
-
+    <script src="/assets/js/p5.min.js"></script>
     <div class="post__content section-padding">
       <div class="grid">
         <div id="markdown" itemprop="articleBody">
           {{content}}
-          <p>
-            <canvas id="pleaseffs" class="processing" data-processing-sources="{{ page.script}}" style="width:100vw !important;"></canvas> 
-          <p>
-          <script>
-            setTimeout(function() {document.getElementById("pleaseffs").style.width = "100vw"},500);
-          </script>
+          <script src="{{page.script}}"></script>
+          
 
         </div>
 
