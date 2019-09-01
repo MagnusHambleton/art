@@ -5,7 +5,7 @@ date: 2019-09-01
 description: 
 image: /assets/images/circles.png
 author: Magnus Hambleton
-script: /assets/processing/circles/circles.js
+script: /assets/processing/circles/Circles.js
 tags: 
   - processing
 ---
