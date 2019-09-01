@@ -2,11 +2,12 @@
 num_circles = 90; 
 num_lines = 30; 
 opacity = 200;
+density = 4;
 function setup() {
   var cnv = createCanvas(1660, 960);
   cnv.parent(document.getElementById('markdown'));
   smooth();
-  pixelDensity(4);
+  pixelDensity(density);
   background('#FFFCF9');
   strokeWeight(2);
 }
@@ -34,23 +35,45 @@ function draw() {
     arc_length = random(0,3*PI/2);
     arc(int(random(0,width)),int(random(0,height)), size*size, size*size, start, start+arc_length);
   }
-  noisee(2, 0, 0, width, height);
-  noLoop();
+  console.log(width);
+  console.log(height);
+  noisee(10, 0, 0, width, height);
+
 
   function noisee(n, x, y, w, h) {
     x1 = constrain(x, 0, width);
     x2 = constrain(x+w, 0, width);
     y1 = constrain(y, 0, height);
     y2 = constrain(y+h, 0, height);
-    for (j = y1; j < y2; j++) {  
-      for (i = x1; i < x2; i++) {
-        let col = get(i, j);
-        b = random(-n, n);
-        col = color(red(col)+b, green(col)+b, blue(col)+b);
-        set(i, j, col);
+    // for (j = y1; j < y2; j+=0.25) {  
+    //   for (i = x1; i < x2; i+=0.25) {
+    //     let col = get(i, j);
+    //     b = random(-n, n);
+    //     col = color(red(col)+b, green(col)+b, blue(col)+b);
+    //     set(i, j, col);
+    //   }
+    // }
+    loadPixels();
+    let d = pixelDensity();
+    for (yj = y1; yj < y2; yj++) {  
+      for (xi = x1; xi < x2; xi++) {
+        for (let i = 0; i < d; i++) {
+          for (let j = 0; j < d; j++) {
+            // loop over
+            b = random(-n, n);
+            index = 4 * ((yj * d + j) * width * d + (xi * d + i));
+            pixels[index] += b;
+            pixels[index+1] += b;
+            pixels[index+2] += b;
+            pixels[index+3] += b;
+          }
+        }
       }
     }
+    updatePixels();
+    console.lot('finished');
   }
+  noLoop();
 
 }
 function mouseClicked() {
