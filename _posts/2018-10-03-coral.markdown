@@ -3,7 +3,7 @@ layout: processing_render
 title: "Coral"
 date: 2018-10-03
 description: 
-image: /assets/images/coral.png
+image: /assets/images/coral.jpg
 author: Magnus Hambleton
 script: /assets/processing/coral/coral.pde
 tags: 
