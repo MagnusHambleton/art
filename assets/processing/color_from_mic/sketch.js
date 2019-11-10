@@ -201,14 +201,17 @@ function draw_curves(wavelengths, amplitudes) {
 }
 
 function mouseClicked() {
-  if ( isRecording==1 ) { // .isPlaying() returns a boolean
-    mic.stop();
-    noLoop();
-    isRecording=0;
-  } else {
-    mic.start();
-    loop();
-    isRecording=1;
-  }
+  if(mouseX>0 && mouseY>0 && mouseX<width && mouseY<height) {
+    draw();
+	  if ( isRecording==1 ) { // .isPlaying() returns a boolean
+	    mic.stop();
+	    noLoop();
+	    isRecording=0;
+	  } else {
+	    mic.start();
+	    loop();
+	    isRecording=1;
+	  }
+	}
 }
 
