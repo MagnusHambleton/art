@@ -6,9 +6,42 @@
 </description>
     <link>http://art.analogmantra.com</link>
     <atom:link href="http://art.analogmantra.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 01 Sep 2019 20:58:31 +0200</pubDate>
-    <lastBuildDate>Sun, 01 Sep 2019 20:58:31 +0200</lastBuildDate>
+    <pubDate>Sun, 10 Nov 2019 21:13:20 +0100</pubDate>
+    <lastBuildDate>Sun, 10 Nov 2019 21:13:20 +0100</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>Color from mic</title>
+        <description>&lt;p&gt;Enable your microphone to use this script. The script will take the sound specrtum coming in through the mic
+and turn it into a colour based on how the eye would perceive the equivalent light spectrum. For more information
+on the way this is done, &lt;a href=&quot;https://analogmantra.com/most-things-sound-blue-green-4af988ea8f85&quot;&gt;see the dedicated blog post on turning sound into color&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The animation will stop/start when you click anywhere in the window.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;If it just flashes, try refreshing the page&lt;/strong&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 02 Nov 2019 00:00:00 +0100</pubDate>
+        <link>http://art.analogmantra.com/2019/11/02/color-from-mic/</link>
+        <guid isPermaLink="true">http://art.analogmantra.com/2019/11/02/color-from-mic/</guid>
+        
+        <category>processing</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Hilma af Klint Circles</title>
+        <description>&lt;p&gt;Inspired by Hilma af Klints geometry and colour choices. Generate a new one by clicking the image (will take 4-5 seconds, give it time);&lt;/p&gt;
+</description>
+        <pubDate>Sun, 01 Sep 2019 00:00:00 +0200</pubDate>
+        <link>http://art.analogmantra.com/2019/09/01/hilma-af-klint-circles/</link>
+        <guid isPermaLink="true">http://art.analogmantra.com/2019/09/01/hilma-af-klint-circles/</guid>
+        
+        <category>processing</category>
+        
+        
+      </item>
     
       <item>
         <title>Circles</title>
