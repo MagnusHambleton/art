@@ -75,6 +75,15 @@ velocity = 0.05; // speed which dot movest towards eye tracking place
 ss_learning_speed = 0.05;
 drawing_point_size = 10; // size of ellipse
 
+// intro text
+s = "1. Make sure that your face is positioned inside the green box in the top left and that the green face outline finds your face \n";
+s = s + "2. Calibrate the eye tracker by following the mouse with your eyes and click near the edge of each side of the screen, ";
+s = s + "ten times in total \n";
+s = s + "3. Once you have done this, the paintbrush will move in the direction of where you are looking and the colour and paintbrush size";
+s = s + "will be controled by your voice. No mouse needed.\n";
+s = s + "4. If you don't feel the eye tracking model is being accurate, refresh the page and try to calibrate it again more carefully. "; 
+s = s+ "Avoiding clicking after calibration can also help.";
+
 // initialise variables
 counter = 0;
 last_x = [];
@@ -96,11 +105,6 @@ function draw() {
 		stroke(0);
 		fill(255);
 		rect(width/4,2*height/3-50,width/2,height/3);
-		s = "1. Make sure that your face is positioned inside the green box to the right and that the green face outline finds your face \n";
-		s = s + "2. Calibrate the eye tracker by following the mouse with your eyes and click near the edge of each side of the screen, ";
-		s = s + "ten times in total \n";
-		s = s + "3. Once you have done this, the paintbrush will move in the direction of where you are looking and the colour and paintbrush size";
-		s = s+ "will be controled by your voice";
 		noStroke();
 		fill(0);
 		textSize(16);
@@ -179,10 +183,12 @@ function draw() {
 
 	}
 
-	diff_vector = [(avg_x-position[0])*velocity, (avg_y-position[1])*velocity];
-	position = [position[0]+diff_vector[0], position[1]+diff_vector[1]];
-	fill(rgb[0],rgb[1],rgb[2]);
-	ellipse(position[0],position[1],drawing_point_size,drawing_point_size);
+	if(!starting_for_first_time || click_counter ==9) {
+		diff_vector = [(avg_x-position[0])*velocity, (avg_y-position[1])*velocity];
+		position = [position[0]+diff_vector[0], position[1]+diff_vector[1]];
+		fill(rgb[0],rgb[1],rgb[2]);
+		ellipse(position[0],position[1],drawing_point_size,drawing_point_size);
+	}
 
 }
 
