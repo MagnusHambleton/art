@@ -1,7 +1,7 @@
 ---
 layout: p5js_render
 title: "Hilma af Klint Circles"
-date: 2019-09-01
+date: 2019-11-02
 description: 
 image: /assets/images/hilma.jpg
 author: Magnus Hambleton
