@@ -293,7 +293,7 @@ function keyPressed() {
 		loop();
 		isRecording=1;
 	}
-	if (key = 's') {
+	if (key === 's') {
 		save('gazer.jpg'); 
 	}
 	// if ( song.isPlaying() ) { // .isPlaying() returns a boolean
