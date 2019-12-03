@@ -58,7 +58,7 @@ function keyTyped() {
 		setup();
   }
   if (key === 's') {
-		save('gazer.jpg'); 
+		save('game_of_life.jpg'); 
 	}
 }
 

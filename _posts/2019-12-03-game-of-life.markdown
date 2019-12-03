@@ -3,7 +3,7 @@ layout: p5js_render
 title: "Game of life"
 date: 2019-12-03
 description: 
-image: /assets/images/gazer_mvp.jpg
+image: /assets/images/game_of_life.jpg
 author: Magnus Hambleton
 script: /assets/processing/game_of_life_3d/sketch.js
 tags: 
