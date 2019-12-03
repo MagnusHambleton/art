@@ -5,21 +5,24 @@ let running = true;
 let num_layers = 5; // 3 color layers plus one boundary layer at the top and bottom
 let remain_living = [ 4, 4 ]; // sets for which number of neighbours cells will remain alive
 let become_alive = [ 4, 4 ]; // sets for which number of neighbours cells will become alive if dead
-let middle_int = 5;
+let ints = [5,7,9];
 
 function setup() {
+  middle_int = random(ints);
   var cnv = createCanvas(windowWidth, windowHeight);
   cnv.parent(document.getElementById('markdown'));
   w = random(5,50);
   c_size = w;
   distance_between_circles = c_size*4/7;
   pixelDensity(4);
-  //x_offsets = [0,0,0];
-  //y_offsets = [0,0,0];
-  // x_offsets = [0, distance_between_circles, distance_between_circles / 2 ];
-  // y_offsets = [0, 0, 0.866 * distance_between_circles ];
-  x_offsets = [0, w, 2*w];
-  y_offsets = [0,0,0];
+  
+  offset_config = floor(random(3));
+  x_offset_configs = [[0,0,0],[0, distance_between_circles, distance_between_circles / 2 ],[0, w, 2*w]];
+  y_offset_configs = [[0,0,0],[0, 0, 0.866 * distance_between_circles ],[0, w, 2*w]] ;
+  x_offsets = x_offset_configs[offset_config];
+  y_offsets = y_offset_configs[offset_config];
+
+
   colors = [color(0, 0, 255), color(0, 255, 0), color( 255, 0, 0)];
 
   // Calculate columns and rows
@@ -53,6 +56,9 @@ function mousePressed() {
 function keyTyped() {
 	if(key==='r') {
 		setup();
+  }
+  if (key === 's') {
+		save('gazer.jpg'); 
 	}
 }
 
