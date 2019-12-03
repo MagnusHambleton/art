@@ -82,7 +82,8 @@ s = s + "ten times in total \n";
 s = s + "3. Once you have done this, the paintbrush will move in the direction of where you are looking and the colour and paintbrush size";
 s = s + "will be controled by your voice. No mouse needed.\n";
 s = s + "4. If you don't feel the eye tracking model is being accurate, refresh the page and try to calibrate it again more carefully. "; 
-s = s+ "Avoiding clicking after calibration can also help.";
+s = s + "Avoiding clicking after calibration can also help.\n \n";
+s = s + "Press any key to pause and press the 's' key to save a snapshot of your creation."
 
 // initialise variables
 counter = 0;
@@ -291,7 +292,10 @@ function keyPressed() {
 		mic.start();
 		loop();
 		isRecording=1;
-		}
+	}
+	if (key = 's') {
+		save('gazer.jpg'); 
+	}
 	// if ( song.isPlaying() ) { // .isPlaying() returns a boolean
 	//   song.pause();
 	//   noLoop();
