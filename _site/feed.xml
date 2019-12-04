@@ -6,9 +6,9 @@
 </description>
     <link>http://art.analogmantra.com</link>
     <atom:link href="http://art.analogmantra.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 04 Dec 2019 18:49:11 +0100</pubDate>
-    <lastBuildDate>Wed, 04 Dec 2019 18:49:11 +0100</lastBuildDate>
-    <generator>Jekyll v3.6.3</generator>
+    <pubDate>Wed, 04 Dec 2019 20:47:35 +0100</pubDate>
+    <lastBuildDate>Wed, 04 Dec 2019 20:47:35 +0100</lastBuildDate>
+    <generator>Jekyll v3.8.5</generator>
     
       <item>
         <title>Game of life</title>
