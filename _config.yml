@@ -1,13 +1,13 @@
 # Site/SEO settings
-email: 
+email: okay@samesies.io
 baseurl: ""
-paginate: 12
-paginate_path: "/page/:num"
 permalink: /:year/:month/:day/:title/
 google_analytics: 
 
 name: Magnus Hambleton
 title: Analogmantra Art
+url: http://art.analogmantra.com
+twitter_username: magnushambleton
 description: >
   These are my experiments in generative art
 url: http://art.analogmantra.com
@@ -35,10 +35,35 @@ author:
     bio: 
     url: http://analogmantra.com
 
+# Pagination settings
+pagination:
+  enabled: true
+  debug: false
+  per_page: 12
+  permalink: '/page/:num/'
+  title: ':title'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+autopages:
+  enabled: true
+  categories:
+    enabled: false
+  collections:
+    enabled: false
+  tags:
+    layouts: 
+      - 'tag.html'
+    title: 'The Barber Theme'
+    permalink: '/tag/:tag'
+    slugify:
+      mode: raw
+      cased: true
+
 # Build settings
 markdown: kramdown
 plugins:
-  - jekyll-paginate
+  - jekyll-paginate-v2
   - jekyll-sitemap
 compress_html:
   clippings: all

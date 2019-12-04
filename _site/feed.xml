@@ -6,9 +6,23 @@
 </description>
     <link>http://art.analogmantra.com</link>
     <atom:link href="http://art.analogmantra.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 04 Dec 2019 18:49:11 +0100</pubDate>
-    <lastBuildDate>Wed, 04 Dec 2019 18:49:11 +0100</lastBuildDate>
-    <generator>Jekyll v3.6.3</generator>
+    <pubDate>Wed, 04 Dec 2019 20:39:00 +0100</pubDate>
+    <lastBuildDate>Wed, 04 Dec 2019 20:39:00 +0100</lastBuildDate>
+    <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>Game of life</title>
+        <description>&lt;p&gt;Press the ‘r’ key to reset the simulation. Sometimes life emerges, sometimes not. Press ‘s’ key to save an image snapshot of the current moment.&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 03 Dec 2019 00:00:00 +0100</pubDate>
+        <link>http://art.analogmantra.com/2019/12/03/testpost/</link>
+        <guid isPermaLink="true">http://art.analogmantra.com/2019/12/03/testpost/</guid>
+        
+        <category>processing</category>
+        
+        
+      </item>
     
       <item>
         <title>Game of life</title>
