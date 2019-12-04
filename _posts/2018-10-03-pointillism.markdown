@@ -4,10 +4,10 @@ title: "Pointillism"
 date: 2018-10-03
 description: 
 image: /assets/images/pointillism/face1.png
-author: Thomas Vaeth
+author: Magnus Hambleton
 tags: 
-  - Processing
-  - Pointillism
+  - processing
+  - pointillism
 ---
 Randomly generating three colour subtractive printing dots to gradually create an image.
 
