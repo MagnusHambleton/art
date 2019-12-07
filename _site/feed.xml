@@ -4,11 +4,24 @@
     <title>Analogmantra Art</title>
     <description>These are my experiments in generative art
 </description>
-    <link>http://art.analogmantra.com</link>
-    <atom:link href="http://art.analogmantra.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 04 Dec 2019 21:06:51 +0100</pubDate>
-    <lastBuildDate>Wed, 04 Dec 2019 21:06:51 +0100</lastBuildDate>
+    <link>http://localhost:4000</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 07 Dec 2019 21:39:07 +0100</pubDate>
+    <lastBuildDate>Sat, 07 Dec 2019 21:39:07 +0100</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>Pointilism</title>
+        <description>&lt;p&gt;Randomly generated circles and arcs. Click the image to regenerate (only click once - it takes 1-2 seconds).&lt;/p&gt;
+</description>
+        <pubDate>Sat, 07 Dec 2019 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/2019/12/07/pointilism-live/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/12/07/pointilism-live/</guid>
+        
+        <category>processing</category>
+        
+        
+      </item>
     
       <item>
         <title>Game of life</title>
@@ -16,8 +29,8 @@
 
 </description>
         <pubDate>Tue, 03 Dec 2019 00:00:00 +0100</pubDate>
-        <link>http://art.analogmantra.com/2019/12/03/game-of-life/</link>
-        <guid isPermaLink="true">http://art.analogmantra.com/2019/12/03/game-of-life/</guid>
+        <link>http://localhost:4000/2019/12/03/game-of-life/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/12/03/game-of-life/</guid>
         
         <category>processing</category>
         
@@ -30,8 +43,8 @@
 
 </description>
         <pubDate>Thu, 21 Nov 2019 00:00:00 +0100</pubDate>
-        <link>http://art.analogmantra.com/2019/11/21/eye-tracking-mvp/</link>
-        <guid isPermaLink="true">http://art.analogmantra.com/2019/11/21/eye-tracking-mvp/</guid>
+        <link>http://localhost:4000/2019/11/21/eye-tracking-mvp/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/11/21/eye-tracking-mvp/</guid>
         
         <category>processing</category>
         
@@ -43,8 +56,8 @@
         <description>&lt;p&gt;Inspired by Hilma af Klints geometry and colour choices. Generate a new one by clicking the image (will take 4-5 seconds, give it time);&lt;/p&gt;
 </description>
         <pubDate>Sat, 02 Nov 2019 00:00:00 +0100</pubDate>
-        <link>http://art.analogmantra.com/2019/11/02/hilma-af-klint-circles/</link>
-        <guid isPermaLink="true">http://art.analogmantra.com/2019/11/02/hilma-af-klint-circles/</guid>
+        <link>http://localhost:4000/2019/11/02/hilma-af-klint-circles/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/11/02/hilma-af-klint-circles/</guid>
         
         <category>processing</category>
         
@@ -63,8 +76,8 @@ on the way this is done, &lt;a href=&quot;https://analogmantra.com/most-things-s
 
 </description>
         <pubDate>Sat, 02 Nov 2019 00:00:00 +0100</pubDate>
-        <link>http://art.analogmantra.com/2019/11/02/color-from-mic/</link>
-        <guid isPermaLink="true">http://art.analogmantra.com/2019/11/02/color-from-mic/</guid>
+        <link>http://localhost:4000/2019/11/02/color-from-mic/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/11/02/color-from-mic/</guid>
         
         <category>processing</category>
         
@@ -76,8 +89,8 @@ on the way this is done, &lt;a href=&quot;https://analogmantra.com/most-things-s
         <description>&lt;p&gt;Randomly generated circles and arcs. Click the image to regenerate (only click once - it takes 1-2 seconds).&lt;/p&gt;
 </description>
         <pubDate>Sun, 01 Sep 2019 00:00:00 +0200</pubDate>
-        <link>http://art.analogmantra.com/2019/09/01/circles/</link>
-        <guid isPermaLink="true">http://art.analogmantra.com/2019/09/01/circles/</guid>
+        <link>http://localhost:4000/2019/09/01/circles/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/09/01/circles/</guid>
         
         <category>processing</category>
         
@@ -93,8 +106,8 @@ on the way this is done, &lt;a href=&quot;https://analogmantra.com/most-things-s
 &lt;img src=&quot;/assets/images/pointillism/face3.png&quot; alt=&quot;Placeholder&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 03 Oct 2018 00:00:00 +0200</pubDate>
-        <link>http://art.analogmantra.com/2018/10/03/pointillism/</link>
-        <guid isPermaLink="true">http://art.analogmantra.com/2018/10/03/pointillism/</guid>
+        <link>http://localhost:4000/2018/10/03/pointillism/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/10/03/pointillism/</guid>
         
         <category>processing</category>
         
@@ -109,8 +122,8 @@ on the way this is done, &lt;a href=&quot;https://analogmantra.com/most-things-s
 
 </description>
         <pubDate>Wed, 03 Oct 2018 00:00:00 +0200</pubDate>
-        <link>http://art.analogmantra.com/2018/10/03/noise-circles/</link>
-        <guid isPermaLink="true">http://art.analogmantra.com/2018/10/03/noise-circles/</guid>
+        <link>http://localhost:4000/2018/10/03/noise-circles/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/10/03/noise-circles/</guid>
         
         <category>processing</category>
         
@@ -122,8 +135,8 @@ on the way this is done, &lt;a href=&quot;https://analogmantra.com/most-things-s
         <description>&lt;p&gt;Randomly generated strings spiraling outwards&lt;/p&gt;
 </description>
         <pubDate>Wed, 03 Oct 2018 00:00:00 +0200</pubDate>
-        <link>http://art.analogmantra.com/2018/10/03/coral/</link>
-        <guid isPermaLink="true">http://art.analogmantra.com/2018/10/03/coral/</guid>
+        <link>http://localhost:4000/2018/10/03/coral/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/10/03/coral/</guid>
         
         <category>processing</category>
         
