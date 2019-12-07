@@ -110,3 +110,9 @@ function mouseClicked() {
     draw();
   }
 }
+
+function keyPressed() {
+	if (key === 's') {
+		save('hilma.jpg'); 
+	}
+}

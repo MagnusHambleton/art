@@ -1,5 +1,5 @@
 function preload() {
-  img = loadImage('/assets/images/fuck.jpg');
+  img = loadImage('/assets/images/hike.jpg');
 }
 function setup() {
   console.log(img.height, img.width);
@@ -7,7 +7,7 @@ function setup() {
   cnv.parent(document.getElementById('markdown'));
   console.log(windowWidth, windowHeight)
   pixelDensity(4);
-  blendMode(EXCLUSION);
+  blendMode(MULTIPLY);
   background(255);
   //image(img, 0, 0, width, height);
   noStroke();
@@ -15,17 +15,22 @@ function setup() {
 }
 
 var counter = 0;
-var brushSize = 10;
+var brushSize = 50;
 
 // num dots to choose each time
-var num_circles = 10;
+var num_circles = 5;
 
 function draw() {
+  // var x = [];
+  // var y = [];
   for(let j = 0; j < num_circles; j++) {
+    // x[j] = int(random(img.width/2-20,img.width/2+20));
+    // y[j] = int(random(img.height/2-20,img.height/2+20));
 
-    // pick random point on canvas
+    //pick random point on canvas
     var x = int(random(0,img.width));
     var y = int(random(0,img.height));
+
     var pix = img.get(x,y);
     var rgb = [ red(pix), green(pix), blue(pix)];
     var cmy = [1-rgb[0]/255, 1-rgb[1]/255, 1-rgb[2]/255];
@@ -38,8 +43,9 @@ function draw() {
         rgb[i]=0;
       }
       else { 
-        weight = 1//rgb[i]/255;
-        opacity = 1-rgb[i]/255;
+        weight = 1;//cmy[i];//1-rgb[i]/255;
+        //opacity = 1-rgb[i]/255;
+        opacity = cmy[i];
         cmy[i] = 1;
         rgb[i] = 255;
       }
@@ -47,24 +53,29 @@ function draw() {
     var r = (1-cmy[0])*255;
     var g = (1-cmy[1])*255;
     var b = (1-cmy[2])*255;
-    //print(r,g,b);
-    //println();
-    //noLoop();
-    //console.log(rgb[0], rgb[1], rgb[2], 255*opacity);
-    fill(rgb[0], rgb[1], rgb[2], 255*opacity);
+
+    fill(r,g,b, 200*opacity);
+    //fill(rgb[0], rgb[1], rgb[2], 255*opacity);
     //if(counter==200){noLoop();}
     ellipse(x, y, brushSize*weight, brushSize*weight);
   
     if (counter%1000 == 0 && counter !=0) {
-      brushSize = brushSize;
+      brushSize = brushSize-1;
+      if(brushSize<5) brushSize=5;
     }
     counter = counter + 1;
-    //if (counter%21000==0 && counter !=0) {
-     // noisee(5,0,0,width,height);
-     // noLoop();
-    //}
   }
-  //noLoop();
+  // cyan = color(0,255,255,100);
+  // magenta = color(255,0,255,255);
+  // yellow = color(255,255,0);
+  // fill(cyan);
+  // ellipse(x[0], y[0], brushSize, brushSize);
+  // fill(magenta);
+  // ellipse(x[1], y[1], brushSize, brushSize);
+  
+
+  // noLoop();
+
 }
 
 var running = true;
