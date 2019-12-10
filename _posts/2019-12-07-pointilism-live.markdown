@@ -1,5 +1,5 @@
 ---
-layout: p5js_render_fullpage
+layout: p5js_render
 title: "Pointilism"
 date: 2019-12-07
 description: 
