@@ -8,5 +8,7 @@ author: Magnus Hambleton
 script: /assets/processing/circles/Circles.js
 tags: 
   - processing
+  - noise
+  - geometry
 ---
 Randomly generated circles and arcs. Click the image to regenerate (only click once - it takes 1-2 seconds).

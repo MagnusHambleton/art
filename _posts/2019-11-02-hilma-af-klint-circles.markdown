@@ -8,5 +8,7 @@ author: Magnus Hambleton
 script: /assets/processing/hilma_af_klint_circles/sketch.js
 tags: 
   - processing
+  - hilmaafklint
+  - color
 ---
 Inspired by Hilma af Klints geometry and colour choices. Generate a new one by clicking the image (will take 4-5 seconds, give it time);

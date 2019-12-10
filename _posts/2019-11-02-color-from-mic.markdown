@@ -8,6 +8,10 @@ author: Magnus Hambleton
 script: /assets/processing/color_from_mic/sketch.js
 tags: 
   - processing
+  - sound
+  - mic
+  - synaesthesia
+  - color
 ---
 Enable your microphone to use this script. The script will take the sound specrtum coming in through the mic
 and turn it into a colour based on how the eye would perceive the equivalent light spectrum. For more information

@@ -8,6 +8,7 @@ author: Magnus Hambleton
 tags: 
   - processing
   - pointillism
+  - noise
 ---
 Randomly generating three colour subtractive printing dots to gradually create an image.
 

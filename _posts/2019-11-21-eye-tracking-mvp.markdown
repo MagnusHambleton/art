@@ -8,6 +8,10 @@ author: Magnus Hambleton
 script: /assets/processing/gazer_mvp/sketch.js
 tags: 
   - processing
+  - synaesthesia
+  - sound
+  - video
+  - color
 ---
 Use an eye tracking model and sound-to-colour conversion to paint using your eyes and your voice or whistling.
 

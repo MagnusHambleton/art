@@ -8,6 +8,9 @@ author: Magnus Hambleton
 script: /assets/processing/game_of_life_3d/sketch.js
 tags: 
   - processing
+  - color
+  - simulation
+  - nature
 ---
 Press the 'r' key to reset the simulation. Sometimes life emerges, sometimes not. Press 's' key to save an image snapshot of the current moment.
 

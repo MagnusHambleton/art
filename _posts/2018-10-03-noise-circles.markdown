@@ -8,6 +8,8 @@ author: Magnus Hambleton
 script: /assets/processing/random_noise_circles/random_noise_circles.pde
 tags: 
   - processing
+  - noise
+  - geometry
 ---
 Chaotic circles
 

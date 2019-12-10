@@ -6,8 +6,8 @@
 </description>
     <link>http://art.analogmantra.com</link>
     <atom:link href="http://art.analogmantra.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 10 Dec 2019 21:41:00 +0100</pubDate>
-    <lastBuildDate>Tue, 10 Dec 2019 21:41:00 +0100</lastBuildDate>
+    <pubDate>Tue, 10 Dec 2019 21:50:56 +0100</pubDate>
+    <lastBuildDate>Tue, 10 Dec 2019 21:50:56 +0100</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -20,6 +20,10 @@ Press any key to pause/play the simulation. Press the ‘s’ key to export a sn
         <guid isPermaLink="true">http://art.analogmantra.com/2019/12/07/pointilism-live/</guid>
         
         <category>processing</category>
+        
+        <category>color</category>
+        
+        <category>simulation</category>
         
         
       </item>
@@ -35,6 +39,12 @@ Press any key to pause/play the simulation. Press the ‘s’ key to export a sn
         
         <category>processing</category>
         
+        <category>color</category>
+        
+        <category>simulation</category>
+        
+        <category>nature</category>
+        
         
       </item>
     
@@ -49,6 +59,14 @@ Press any key to pause/play the simulation. Press the ‘s’ key to export a sn
         
         <category>processing</category>
         
+        <category>synaesthesia</category>
+        
+        <category>sound</category>
+        
+        <category>video</category>
+        
+        <category>color</category>
+        
         
       </item>
     
@@ -61,6 +79,10 @@ Press any key to pause/play the simulation. Press the ‘s’ key to export a sn
         <guid isPermaLink="true">http://art.analogmantra.com/2019/11/02/hilma-af-klint-circles/</guid>
         
         <category>processing</category>
+        
+        <category>hilmaafklint</category>
+        
+        <category>color</category>
         
         
       </item>
@@ -82,6 +104,14 @@ on the way this is done, &lt;a href=&quot;https://analogmantra.com/most-things-s
         
         <category>processing</category>
         
+        <category>sound</category>
+        
+        <category>mic</category>
+        
+        <category>synaesthesia</category>
+        
+        <category>color</category>
+        
         
       </item>
     
@@ -94,6 +124,10 @@ on the way this is done, &lt;a href=&quot;https://analogmantra.com/most-things-s
         <guid isPermaLink="true">http://art.analogmantra.com/2019/09/01/circles/</guid>
         
         <category>processing</category>
+        
+        <category>noise</category>
+        
+        <category>geometry</category>
         
         
       </item>
@@ -114,6 +148,8 @@ on the way this is done, &lt;a href=&quot;https://analogmantra.com/most-things-s
         
         <category>pointillism</category>
         
+        <category>noise</category>
+        
         
       </item>
     
@@ -128,6 +164,10 @@ on the way this is done, &lt;a href=&quot;https://analogmantra.com/most-things-s
         
         <category>processing</category>
         
+        <category>noise</category>
+        
+        <category>geometry</category>
+        
         
       </item>
     
@@ -140,6 +180,10 @@ on the way this is done, &lt;a href=&quot;https://analogmantra.com/most-things-s
         <guid isPermaLink="true">http://art.analogmantra.com/2018/10/03/coral/</guid>
         
         <category>processing</category>
+        
+        <category>simulation</category>
+        
+        <category>nature</category>
         
         
       </item>
