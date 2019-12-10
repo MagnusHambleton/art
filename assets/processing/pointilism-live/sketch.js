@@ -27,13 +27,20 @@ var counter = 0;
 // num dots to choose each time
 var num_circles = 5;
 
+// function draw() {
+//   //background(0);
+//   if (capture.loadedmetadata) {
+//     let c = capture.get(0, 0,capture.width/resolution,capture.height/resolution);
+//     image(c, 0, 0);
+//   }
 function draw() {
   // var x = [];
   // var y = [];
+  
   if(!start_drawing) {
     if (capture.loadedmetadata && frameCount > 250) {
       setup();
-      img = capture.get();
+      img = capture.get(0, 0,capture.width/resolution,capture.height/resolution);
       //image(img,0,0);
       console.log(scale_factor);
 
@@ -98,8 +105,9 @@ function draw() {
 var running = true;
 
 function keyPressed() {
-  if(key == 's') saveImage();
-  
+  if (key === 's') {
+		save('dotFace.png'); 
+	}
   if(running) {
     noLoop();
     running = false;
