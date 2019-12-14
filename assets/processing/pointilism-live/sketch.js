@@ -74,7 +74,6 @@ function draw() {
           rgb[i]=0;
         }
         else { 
-          weight = 1;//cmy[i];//1-rgb[i]/255;
           //opacity = 1-rgb[i]/255;
           opacity = cmy[i];
           //cmy[i] = 1;
@@ -88,10 +87,11 @@ function draw() {
       var b = (1-cmy[2]*color_intensity)*255;
 
       fill(r,g,b, 255);
-      ellipse(resolution*scale_factor*x, resolution*scale_factor*y, brushSize*weight, brushSize*weight);
+      circleSize = random(0.3,1.1)*brushSize;
+      ellipse(resolution*scale_factor*x, resolution*scale_factor*y, circleSize, circleSize);
     
       if (counter%1000 == 0 && counter !=0) {
-        brushSize = brushSize-0.5;
+        brushSize = brushSize*0.985;
         if(counter % 5000 == 0) color_intensity += color_intensity >= 0.95 ? 0 : 0.1;
         console.log(color_intensity, counter);
         if(brushSize<8) brushSize=8;
