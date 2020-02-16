@@ -85,7 +85,6 @@ function mouseClicked() {
   }
 }
 
-
 colors = ['#2F1847', '#FF6978', '#475841', '#53DD6C', '#3F403F', '#000000', '#FFFCF9'];
 //old colors = ['#2D2615', '#19647E', '#28AFB0', '#F4D35E', '#EE964B', '#000000'] ;
 function rcol() {
