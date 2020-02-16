@@ -1,0 +1,18 @@
+---
+layout: post
+title: "A needle"
+date: 2019-12-27
+description: 
+image: /assets/images/pointilism-live.jpg
+author: Magnus Hambleton
+script: /assets/processing/pointilism-live/sketch.js
+tags: 
+  - writing
+---
+Do you rememeber the smell of grandma's house or the sound of the first waterfall you saw? That place where you fell off your bike,and that person you liked saw you. The last turn of the road before your house on your way back from school. The bench in the forest or by the sea that you liked to read books on when you wanted to be alone.
+
+Take a needle and a paper map of the world. Make a small pinprick, anywhere on the land part the map of the world. The needlehole  covers an area where hundreds of people have spent the vast majority of their lives, having their version of all of these memories within the bounds of the pinprick. Someone's favourite piece of nature (where they kissed their first date) is towards the eastern part of where the needle meets the paper, while a parent has laid their child to rest much too early to the west. 
+
+When you remove the needle from the paper map, look at the tiny hole you have made. Within this little poiny, memories have taken place that would take you hundreds of lifetimes of memories to re-live or rememeber.     
+
+200 neighbours lost their virginity there. 
