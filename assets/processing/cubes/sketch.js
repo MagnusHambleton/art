@@ -1,7 +1,7 @@
 function preload() {
-  image1 = loadImage('/assets/images/cubes/1.png');
-  image2 = loadImage('/assets/images/cubes/2.png');
-  image3 = loadImage('/assets/images/cubes/3.png');
+  image1 = loadImage('/assets/images/cubes/image1.jpg');
+  image2 = loadImage('/assets/images/cubes/image2.jpg');
+  image3 = loadImage('/assets/images/cubes/image3.jpg');
 
 }
 
@@ -15,14 +15,18 @@ function setup() {
 
 }
 
-var cube_size = 150;
+var cube_size = 200;
 var cube_side_height = cube_size/2.5;
 var running = true;
 
 function draw() {
   background(255);
   fill_crosses();
-  //image(image1, 500,500);
+  // draw_cross(200,200,200, image1, image2, image3);
+  // draw_cross(600,400,200, image1, image2, image3);
+  // draw_cross(800,400,200, image1, image2, image3);
+  // draw_cross(1000,400,200, image1, image2, image3);
+  //image(image1, 100,100);
   noLoop();
 
   
@@ -60,59 +64,68 @@ function random_colour() {
   return color( colours[ int( random(0, colours.length ) ) ] );
 }
 
-function draw_cross(x_start, y_start, cube_size) {
+function copy_image(image_to_copy, x_loc, y_loc, w, h) {
+  var return_image = createImage(w, h);
+  return_image.copy(image_to_copy,x_loc,y_loc,w, h, 0, 0, w, h);
+  return return_image;
+}
+
+function draw_cross(x_start, y_start, cube_size, im1, im2, im3) {
   strokeWeight(0.2);
   
   // top part
   let top_color = color('#0A141C');
+  var image_1 = copy_image(im1,x_start-cube_size, y_start, 2*cube_size, 2*cube_size);
 
-  top_side = createGraphics(width,image1.height*width/image1.width);
+  var top_side = createGraphics(2*cube_size, 2*cube_size);
   top_side.fill('rgba(0,0,0,1)');
   //stroke(top_color);
   top_side.beginShape();
-  top_side.vertex(x_start,               y_start + cube_size/2 * tan(PI/6));
-  top_side.vertex(x_start + cube_size/4, y_start + cube_size/4 * tan(PI/6));
-  top_side.vertex(x_start + cube_size/2, y_start + cube_size/2 * tan(PI/6));
-  top_side.vertex(x_start,               y_start + cube_size   * tan(PI/6));
-  top_side.vertex(x_start - cube_size/2, y_start + cube_size/2 * tan(PI/6) );
-  top_side.vertex(x_start - cube_size/4, y_start + cube_size/4 * tan(PI/6));
+  top_side.vertex(cube_size,               0 + cube_size/2 * tan(PI/6));
+  top_side.vertex(cube_size + cube_size/4, 0 + cube_size/4 * tan(PI/6));
+  top_side.vertex(cube_size + cube_size/2, 0 + cube_size/2 * tan(PI/6));
+  top_side.vertex(cube_size,               0 + cube_size   * tan(PI/6));
+  top_side.vertex(cube_size - cube_size/2, 0 + cube_size/2 * tan(PI/6) );
+  top_side.vertex(cube_size - cube_size/4, 0 + cube_size/4 * tan(PI/6));
   top_side.endShape(CLOSE);
-  image1.mask(top_side);
-  image(image1,0,0,width,image1.height*width/image1.width);
+  image_1.mask(top_side);
+  image(image_1,x_start-cube_size,y_start,2*cube_size,2*cube_size);
 
   // left side
   let left_color = color('#D0C8AD');
-  left_side = createGraphics(width,image2.height*width/image2.width);
+  var image_2 = copy_image(im2,x_start-cube_size, y_start, 2*cube_size, 2*cube_size);
+  var left_side = createGraphics(2*cube_size, 2*cube_size);
   left_side.fill('rgba(0,0,0,1)');
   //fill(left_color);
   //stroke(left_color);
   left_side.beginShape();
-  left_side.vertex(x_start - cube_size/2, y_start + cube_size/2   * tan(PI/6));
-  left_side.vertex(x_start - cube_size/2, y_start + cube_size     * tan(PI/6));
-  left_side.vertex(x_start - cube_size/4, y_start + cube_size*5/4 * tan(PI/6));
-  left_side.vertex(x_start - cube_size/4, y_start + cube_size*7/4 * tan(PI/6));
-  left_side.vertex(x_start,               y_start + cube_size*2   * tan(PI/6));
-  left_side.vertex(x_start,               y_start + cube_size     * tan(PI/6));
+  left_side.vertex(cube_size- cube_size/2,  0 + cube_size/2   * tan(PI/6));
+  left_side.vertex(cube_size - cube_size/2, 0 + cube_size     * tan(PI/6));
+  left_side.vertex(cube_size - cube_size/4, 0 + cube_size*5/4 * tan(PI/6));
+  left_side.vertex(cube_size - cube_size/4, 0 + cube_size*7/4 * tan(PI/6));
+  left_side.vertex(cube_size,               0 + cube_size*2   * tan(PI/6));
+  left_side.vertex(cube_size,               0 + cube_size     * tan(PI/6));
   left_side.endShape(CLOSE);
-  image2.mask(left_side);
-  image(image2,0,0,width,image2.height*width/image2.width);
+  image_2.mask(left_side);
+  image(image_2,x_start-cube_size,y_start,2*cube_size,2*cube_size);
 
   // right side
   let right_color = color('#CE2D35');
 
-  right_side = createGraphics(width,image3.height*width/image3.width);
+  var image_3 = copy_image(im3,x_start-cube_size, y_start, 2*cube_size, 2*cube_size);
+  var right_side = createGraphics(2*cube_size, 2*cube_size);
   right_side.fill('rgba(0,0,0,1)');
   //stroke(right_color);
   right_side.beginShape();
-  right_side.vertex(x_start + cube_size/2, y_start + cube_size/2   * tan(PI/6));
-  right_side.vertex(x_start + cube_size/2, y_start + cube_size     * tan(PI/6));
-  right_side.vertex(x_start + cube_size/4, y_start + cube_size*5/4 * tan(PI/6));
-  right_side.vertex(x_start + cube_size/4, y_start + cube_size*7/4 * tan(PI/6));
-  right_side.vertex(x_start,               y_start + cube_size*2   * tan(PI/6));
-  right_side.vertex(x_start,               y_start + cube_size     * tan(PI/6));
+  right_side.vertex(cube_size + cube_size/2, 0 + cube_size/2   * tan(PI/6));
+  right_side.vertex(cube_size + cube_size/2, 0 + cube_size     * tan(PI/6));
+  right_side.vertex(cube_size + cube_size/4, 0 + cube_size*5/4 * tan(PI/6));
+  right_side.vertex(cube_size + cube_size/4, 0 + cube_size*7/4 * tan(PI/6));
+  right_side.vertex(cube_size,               0 + cube_size*2   * tan(PI/6));
+  right_side.vertex(cube_size,               0 + cube_size     * tan(PI/6));
   right_side.endShape(CLOSE);
-  image3.mask(right_side);
-  image(image3,0,0,width,image3.height*width/image3.width);
+  image_3.mask(right_side);
+  image(image_3,x_start-cube_size,y_start,2*cube_size,2*cube_size);
 
 
 }
@@ -126,9 +139,9 @@ function fill_crosses() {
   for(let i = 0; i < hor_crosses; i++) {
     for(let j = 0; j < vert_crosses; j++) {
       if(j%2 == 0) {
-        draw_cross(i * cube_size * 3/2,               j * cube_size * tan(PI/6) * 3/4 - cube_size, cube_size);
+        draw_cross(i * cube_size * 3/2,               j * cube_size * tan(PI/6) * 3/4 - cube_size, cube_size, image1, image2, image3);
       } else {
-        draw_cross(i * cube_size * 3/2 + cube_size*3/4, j * cube_size * tan(PI/6) * 3/4 - cube_size, cube_size);
+        draw_cross(i * cube_size * 3/2 + cube_size*3/4, j * cube_size * tan(PI/6) * 3/4 - cube_size, cube_size, image1, image2, image3);
       }
     }
   }
