@@ -1,0 +1,13 @@
+---
+layout: p5js_render_fullpage
+title: "Classes"
+date: 2020-05-03
+description: 
+image: /assets/images/aesthetic.jpg
+author: Magnus Hambleton
+script: /assets/processing/classes/sketch.js
+tags: 
+  - processing
+  - color
+---
+Exploring an aesthetic I've been seeing on Byte. Click anywhere to pause. Press 's' to save a screenshot, 'r' to restart. The style randomizes.
