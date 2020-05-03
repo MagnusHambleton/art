@@ -12,7 +12,7 @@ function setup() {
   frameRate(20);
   noStroke();
   strokeWeight(0);
-
+  noFill();
 }
 
 var cube_size = 200;
@@ -21,7 +21,11 @@ var running = true;
 
 function draw() {
   background(255);
-  fill_crosses();
+  if(random()<0.5) {
+    fill_crosses();
+  } else {
+    fill_cubes();
+  }
   // draw_cross(200,200,200, image1, image2, image3);
   // draw_cross(600,400,200, image1, image2, image3);
   // draw_cross(800,400,200, image1, image2, image3);
@@ -60,7 +64,7 @@ let colours = [
 ];
 
 
-function random_colour() {
+function randomColour() {
   return color( colours[ int( random(0, colours.length ) ) ] );
 }
 

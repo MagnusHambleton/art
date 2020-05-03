@@ -4,23 +4,21 @@
     <title>Analogmantra Art</title>
     <description>These are my experiments in generative art
 </description>
-    <link>http://localhost:4000</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 25 Feb 2020 20:14:06 +0100</pubDate>
-    <lastBuildDate>Tue, 25 Feb 2020 20:14:06 +0100</lastBuildDate>
+    <link>http://art.analogmantra.com</link>
+    <atom:link href="http://art.analogmantra.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 03 May 2020 20:59:18 +0200</pubDate>
+    <lastBuildDate>Sun, 03 May 2020 20:59:18 +0200</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
-        <title>Cubes</title>
-        <description>&lt;p&gt;Exploring an aesthetic I’ve been seeing on Byte. Click anywhere to pause. Press ‘s’ to save a screenshot, ‘r’ to restart. The style randomizes.&lt;/p&gt;
+        <title>Perlin Box</title>
+        <description>&lt;p&gt;Trying out some patterns inspired by the great Manolo Gamboa Naon.&lt;/p&gt;
 </description>
-        <pubDate>Sun, 23 Feb 2020 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2020/02/23/cubes/</link>
-        <guid isPermaLink="true">http://localhost:4000/2020/02/23/cubes/</guid>
+        <pubDate>Sun, 03 May 2020 00:00:00 +0200</pubDate>
+        <link>http://art.analogmantra.com/2020/05/03/perlin_box/</link>
+        <guid isPermaLink="true">http://art.analogmantra.com/2020/05/03/perlin_box/</guid>
         
         <category>processing</category>
-        
-        <category>color</category>
         
         
       </item>
@@ -30,8 +28,8 @@
         <description>&lt;p&gt;Exploring an aesthetic I’ve been seeing on Byte. Click anywhere to pause. Press ‘s’ to save a screenshot, ‘r’ to restart. The style randomizes.&lt;/p&gt;
 </description>
         <pubDate>Sat, 08 Feb 2020 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2020/02/08/new_aesthetic/</link>
-        <guid isPermaLink="true">http://localhost:4000/2020/02/08/new_aesthetic/</guid>
+        <link>http://art.analogmantra.com/2020/02/08/new_aesthetic/</link>
+        <guid isPermaLink="true">http://art.analogmantra.com/2020/02/08/new_aesthetic/</guid>
         
         <category>processing</category>
         
@@ -46,8 +44,8 @@
 Press any key to pause/play the simulation. Press the ‘s’ key to export a snapshot.&lt;/p&gt;
 </description>
         <pubDate>Sat, 07 Dec 2019 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2019/12/07/pointilism-live/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/12/07/pointilism-live/</guid>
+        <link>http://art.analogmantra.com/2019/12/07/pointilism-live/</link>
+        <guid isPermaLink="true">http://art.analogmantra.com/2019/12/07/pointilism-live/</guid>
         
         <category>processing</category>
         
@@ -64,8 +62,8 @@ Press any key to pause/play the simulation. Press the ‘s’ key to export a sn
 
 </description>
         <pubDate>Tue, 03 Dec 2019 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2019/12/03/game-of-life/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/12/03/game-of-life/</guid>
+        <link>http://art.analogmantra.com/2019/12/03/game-of-life/</link>
+        <guid isPermaLink="true">http://art.analogmantra.com/2019/12/03/game-of-life/</guid>
         
         <category>processing</category>
         
@@ -84,8 +82,8 @@ Press any key to pause/play the simulation. Press the ‘s’ key to export a sn
 
 </description>
         <pubDate>Thu, 21 Nov 2019 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2019/11/21/eye-tracking-mvp/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/11/21/eye-tracking-mvp/</guid>
+        <link>http://art.analogmantra.com/2019/11/21/eye-tracking-mvp/</link>
+        <guid isPermaLink="true">http://art.analogmantra.com/2019/11/21/eye-tracking-mvp/</guid>
         
         <category>processing</category>
         
@@ -105,8 +103,8 @@ Press any key to pause/play the simulation. Press the ‘s’ key to export a sn
         <description>&lt;p&gt;Inspired by Hilma af Klints geometry and colour choices. Generate a new one by clicking the image (will take 4-5 seconds, give it time);&lt;/p&gt;
 </description>
         <pubDate>Sat, 02 Nov 2019 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2019/11/02/hilma-af-klint-circles/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/11/02/hilma-af-klint-circles/</guid>
+        <link>http://art.analogmantra.com/2019/11/02/hilma-af-klint-circles/</link>
+        <guid isPermaLink="true">http://art.analogmantra.com/2019/11/02/hilma-af-klint-circles/</guid>
         
         <category>processing</category>
         
@@ -129,8 +127,8 @@ on the way this is done, &lt;a href=&quot;https://analogmantra.com/most-things-s
 
 </description>
         <pubDate>Sat, 02 Nov 2019 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2019/11/02/color-from-mic/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/11/02/color-from-mic/</guid>
+        <link>http://art.analogmantra.com/2019/11/02/color-from-mic/</link>
+        <guid isPermaLink="true">http://art.analogmantra.com/2019/11/02/color-from-mic/</guid>
         
         <category>processing</category>
         
@@ -150,8 +148,8 @@ on the way this is done, &lt;a href=&quot;https://analogmantra.com/most-things-s
         <description>&lt;p&gt;Randomly generated circles and arcs. Click the image to regenerate (only click once - it takes 1-2 seconds).&lt;/p&gt;
 </description>
         <pubDate>Sun, 01 Sep 2019 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/2019/09/01/circles/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/09/01/circles/</guid>
+        <link>http://art.analogmantra.com/2019/09/01/circles/</link>
+        <guid isPermaLink="true">http://art.analogmantra.com/2019/09/01/circles/</guid>
         
         <category>processing</category>
         
@@ -171,8 +169,8 @@ on the way this is done, &lt;a href=&quot;https://analogmantra.com/most-things-s
 &lt;img src=&quot;/assets/images/pointillism/face3.png&quot; alt=&quot;Placeholder&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 03 Oct 2018 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/2018/10/03/pointillism/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/10/03/pointillism/</guid>
+        <link>http://art.analogmantra.com/2018/10/03/pointillism/</link>
+        <guid isPermaLink="true">http://art.analogmantra.com/2018/10/03/pointillism/</guid>
         
         <category>processing</category>
         
@@ -189,8 +187,8 @@ on the way this is done, &lt;a href=&quot;https://analogmantra.com/most-things-s
 
 </description>
         <pubDate>Wed, 03 Oct 2018 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/2018/10/03/noise-circles/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/10/03/noise-circles/</guid>
+        <link>http://art.analogmantra.com/2018/10/03/noise-circles/</link>
+        <guid isPermaLink="true">http://art.analogmantra.com/2018/10/03/noise-circles/</guid>
         
         <category>processing</category>
         
@@ -206,8 +204,8 @@ on the way this is done, &lt;a href=&quot;https://analogmantra.com/most-things-s
         <description>&lt;p&gt;Randomly generated strings spiraling outwards&lt;/p&gt;
 </description>
         <pubDate>Wed, 03 Oct 2018 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/2018/10/03/coral/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/10/03/coral/</guid>
+        <link>http://art.analogmantra.com/2018/10/03/coral/</link>
+        <guid isPermaLink="true">http://art.analogmantra.com/2018/10/03/coral/</guid>
         
         <category>processing</category>
         

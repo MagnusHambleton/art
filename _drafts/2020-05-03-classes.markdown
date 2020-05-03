@@ -1,11 +1,11 @@
 ---
 layout: p5js_render_fullpage
-title: "Cubes"
-date: 2020-02-23
+title: "Classes"
+date: 2020-05-03
 description: 
 image: /assets/images/aesthetic.jpg
 author: Magnus Hambleton
-script: /assets/processing/cubes/sketch.js
+script: /assets/processing/classes/sketch.js
 tags: 
   - processing
   - color
