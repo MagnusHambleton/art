@@ -12,6 +12,7 @@ function setup() {
   strokeWeight(1);
   //background('#011627');
   background('#060E70');
+  noiseSeed(random(1000000));
 }
 
 
@@ -86,12 +87,9 @@ function sigmoid(x, k) {
 }
 
 function mousePressed() {
-  if (running) {
-    noLoop();
-    running = false;
-  } else if (!running) { 
-    loop();
-    running = true;
+  if (mouseX > 0 && mouseY > 0 && mouseX < width && mouseY < height) {
+      setup();
+      draw();
   }
 }
 
@@ -101,7 +99,7 @@ function keyTyped() {
     draw();
   }
   if (key === 's') {
-    save('cubes.jpg');
+    save('perlin.jpg');
   }
 }
 
