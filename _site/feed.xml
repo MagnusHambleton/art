@@ -6,9 +6,39 @@
 </description>
     <link>http://art.analogmantra.com</link>
     <atom:link href="http://art.analogmantra.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 03 May 2020 21:15:59 +0200</pubDate>
-    <lastBuildDate>Sun, 03 May 2020 21:15:59 +0200</lastBuildDate>
+    <pubDate>Sun, 06 Sep 2020 22:01:57 +0200</pubDate>
+    <lastBuildDate>Sun, 06 Sep 2020 22:01:57 +0200</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>Shapes</title>
+        <description>&lt;p&gt;Trying out some patterns inspired by the great Manolo Gamboa Naon. Click the ‘r’ key or click/tap the image to regenerate. Give it 3-10 seconds.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 06 Sep 2020 00:00:00 +0200</pubDate>
+        <link>http://art.analogmantra.com/2020/09/06/shapes/</link>
+        <guid isPermaLink="true">http://art.analogmantra.com/2020/09/06/shapes/</guid>
+        
+        <category>processing</category>
+        
+        <category>noise</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Perlin Lines</title>
+        <description>&lt;p&gt;Trying out some patterns inspired by the great Manolo Gamboa Naon. Click the ‘r’ key or click/tap the image to regenerate. Give it 3-10 seconds.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 03 May 2020 00:00:00 +0200</pubDate>
+        <link>http://art.analogmantra.com/2020/05/03/perlin_lines/</link>
+        <guid isPermaLink="true">http://art.analogmantra.com/2020/05/03/perlin_lines/</guid>
+        
+        <category>processing</category>
+        
+        <category>noise</category>
+        
+        
+      </item>
     
       <item>
         <title>Perlin Box</title>
