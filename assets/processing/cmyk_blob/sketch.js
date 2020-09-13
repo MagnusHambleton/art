@@ -55,8 +55,8 @@ class Blob {
   draw(t) {
     let arc = TWO_PI / this.num_points;
     let cp_arc = arc/3;
-    let cp_dev_scale = 100;
-    let p_dev_scale = 100;
+    let cp_dev_scale = min(width,height)/12;
+    let p_dev_scale = min(width,height)/12;
     let p_noise_shift = this.random_shift;
     let points = [];
     let cp_2 = [];

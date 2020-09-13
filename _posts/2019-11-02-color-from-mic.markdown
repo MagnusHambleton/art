@@ -19,5 +19,5 @@ on the way this is done, [see the dedicated blog post on turning sound into colo
 
 The animation will stop/start when you click anywhere in the window. 
 
-**If it just flashes, try refreshing the page**
+**To start, allow access to your microphone, then tap/click the black box below**
 
