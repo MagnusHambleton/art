@@ -37,8 +37,8 @@ function draw() {
     arc_length = random(0, 3 * PI / 2);
     arc(int(random(0, width)), int(random(0, height)), size * size, size * size, start, start + arc_length);
   }
-  console.log(width);
-  console.log(height);
+  //console.log(width);
+  //console.log(height);
   noisee(10, 0, 0, width, height);
 
 
@@ -73,7 +73,7 @@ function draw() {
       }
     }
     updatePixels();
-    console.lot('finished');
+    //console.log('finished');
   }
   noLoop();
 
