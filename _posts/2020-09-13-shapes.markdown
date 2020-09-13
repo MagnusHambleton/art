@@ -1,0 +1,15 @@
+---
+layout: p5js_render
+title: "Blob sprite"
+date: 2020-09-13
+description: 
+image: /assets/images/cmyk-blob.gif
+author: Magnus Hambleton
+script: /assets/processing/cmyk_blob/sketch.js
+tags: 
+  - processing
+  - noise
+  - blob
+  - bezier
+---
+Spent a long time working out how closed bezier shapes work and how to make them feel organic.

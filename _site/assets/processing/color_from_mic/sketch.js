@@ -17,6 +17,7 @@ var lowest_wl = 380;
 function setup() {
 	mic = new p5.AudioIn();
 	mic.start();
+	userStartAudio()
 	var cnv = createCanvas(displayWidth, displayHeight);
 	cnv.parent(document.getElementById('markdown'));
 	background(0, 0, 0);
@@ -75,7 +76,7 @@ function draw() {
 		var log_highEnd = Math.log(highest_frequency);
 		var log_lowEnd = Math.log(lowest_frequency);
 		var wavelengths = frequencies2WaveLengths(lowest_frequency, highest_frequency, lowest_wl, highest_wl, frequencies);
-		console.log(wavelengths);
+		//console.log(wavelengths);
 		if (frameCount < 2000) {
 			learning_speed = 0.4;
 		} else {
