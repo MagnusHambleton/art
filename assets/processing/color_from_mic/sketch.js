@@ -17,14 +17,14 @@ var lowest_wl = 380;
 function setup() {
 	mic = new p5.AudioIn();
 	mic.start();
-	userStartAudio()
 	var cnv = createCanvas(displayWidth, displayHeight);
 	cnv.parent(document.getElementById('markdown'));
 	background(0, 0, 0);
 	fft = new p5.FFT(smoothing, bins); // first number is smoothing (0-1), 2nd number is bins (power of two between 16 and 1024)
 	fft.setInput(mic);
 	frameRate(60);
-	isRecording = 1;
+	isRecording = 0;
+	hasStarted = 0;
 
 }
 
@@ -63,56 +63,57 @@ function frequencies2WaveLengths(lower_freq, upper_freq, lower_wl, upper_wl, fre
 function draw() {
 	// background(0);
 	// calculating frequencies and brightnesses
+	if(hasStarted == 1) {
+		var wavelengths = []
+		var ss_learning_speed = 0.05;
 
-	var wavelengths = []
-	var ss_learning_speed = 0.05;
+		if (frameCount % 6 == 1) {
 
-	if (frameCount % 6 == 1) {
+			var frequencies = [];
+			var amplitudes = [];
+			[frequencies, amplitudes] = get_energies(lowest_frequency, highest_frequency, num_points);
 
-		var frequencies = [];
-		var amplitudes = [];
-		[frequencies, amplitudes] = get_energies(lowest_frequency, highest_frequency, num_points);
-
-		var log_highEnd = Math.log(highest_frequency);
-		var log_lowEnd = Math.log(lowest_frequency);
-		var wavelengths = frequencies2WaveLengths(lowest_frequency, highest_frequency, lowest_wl, highest_wl, frequencies);
-		//console.log(wavelengths);
-		if (frameCount < 2000) {
-			learning_speed = 0.4;
-		} else {
-			learning_speed = ss_learning_speed;
-		}
-
-		for (var i = 0; i < num_points; i++) {
-
-			if (amplitudes[i] < weights[i]) {
-				weights[i] = weights[i] - learning_speed
+			var log_highEnd = Math.log(highest_frequency);
+			var log_lowEnd = Math.log(lowest_frequency);
+			var wavelengths = frequencies2WaveLengths(lowest_frequency, highest_frequency, lowest_wl, highest_wl, frequencies);
+			//console.log(wavelengths);
+			if (frameCount < 2000) {
+				learning_speed = 0.4;
 			} else {
-				weights[i] = weights[i] + learning_speed
-			};
-			amplitudes[i] = amplitudes[i] - weights[i];
+				learning_speed = ss_learning_speed;
+			}
+
+			for (var i = 0; i < num_points; i++) {
+
+				if (amplitudes[i] < weights[i]) {
+					weights[i] = weights[i] - learning_speed
+				} else {
+					weights[i] = weights[i] + learning_speed
+				};
+				amplitudes[i] = amplitudes[i] - weights[i];
+
+			}
+
+			background(0);
+
+			// for (var i=0; i < num_points; i++) {
+			// 	if( wavelengths[i] > 300 && wavelengths[i] < 390) { amplitudes[i] = 200;}
+			// 	else {amplitudes[i] = 0;}
+			// }
+
+			rgb = spectrum_to_color(data, wavelengths, amplitudes);
+			background(rgb[0], rgb[1], rgb[2]);
+
+			var hex = rgbToHex(rgb[0], rgb[1], rgb[2])
+			fill(255);
+			textAlign(LEFT, BOTTOM);
+			textSize(20);
+			text(hex, displayWidth * 0.01, displayHeight * 0.8)
 
 		}
 
-		background(0);
-
-		// for (var i=0; i < num_points; i++) {
-		// 	if( wavelengths[i] > 300 && wavelengths[i] < 390) { amplitudes[i] = 200;}
-		// 	else {amplitudes[i] = 0;}
-		// }
-
-		rgb = spectrum_to_color(data, wavelengths, amplitudes);
-		background(rgb[0], rgb[1], rgb[2]);
-
-		var hex = rgbToHex(rgb[0], rgb[1], rgb[2])
-		fill(255);
-		textAlign(LEFT, BOTTOM);
-		textSize(20);
-		text(hex, displayWidth * 0.01, displayHeight * 0.8)
-
+		draw_curves(wavelengths, amplitudes);
 	}
-
-	draw_curves(wavelengths, amplitudes);
 
 }
 
@@ -217,6 +218,11 @@ function mouseClicked() {
 			noLoop();
 			isRecording = 0;
 		} else {
+			if(hasStarted ==0){
+				userStartAudio()
+				setup();
+				hasStarted = 1; 
+			}
 			mic.start();
 			loop();
 			isRecording = 1;
